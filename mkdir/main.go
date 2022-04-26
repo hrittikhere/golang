@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"os"
+	"github.com/hrittikhere/golang/mkdir/cmd"
 )
 
 func main() {
@@ -11,8 +11,8 @@ func main() {
 	flag.StringVar(&directory, "n", "", " File Name")
 	flag.Parse()
 
-	os.Mkdir(directory, 0750)
+	CreatedDirectory, _ := cmd.ExecuteMkdir(directory)
 
-	fmt.Printf("%s Created \n", directory)
+	fmt.Printf("%s Created \n", CreatedDirectory)
 
 }
