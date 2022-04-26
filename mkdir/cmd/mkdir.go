@@ -6,9 +6,8 @@ import (
 
 func ExecuteMkdir(directory string) (string, error) {
 
-err :=os.Mkdir(directory, 0750)
+	err := os.Mkdir(directory, 0750)
 
-return directory,err
-
+	return directory, err
 
 }
