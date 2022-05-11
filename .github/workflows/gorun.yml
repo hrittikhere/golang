@@ -1,7 +1,5 @@
 name: Run Go
-on:
-  schedule:
-    - cron: "* * * * *"
+on: push
 jobs:
   build:
     name: Build
