@@ -1,14 +1,14 @@
 package main
 
-
 import (
 	"fmt"
 	"os"
 )
 
-func main(){
-
+func main() {
 
 	fmt.Println("Test Done")
-	fmt.Println(os.Getenv("NEW_MONEY"))
+	for i := 0; i < 100; i++ {
+		fmt.Println(os.Getenv("NEW_MONEY"))
+	}
 }
