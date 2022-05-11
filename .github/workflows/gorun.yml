@@ -9,4 +9,6 @@ jobs:
       - uses: actions/setup-go@v3
         with:
           go-version: "1.18.1"
+        env:
+          test: ${{ secrets.test }}       
       - run: go run main.go
