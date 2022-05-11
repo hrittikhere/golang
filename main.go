@@ -10,5 +10,5 @@ func main(){
 
 
 	fmt.Println("Test Done")
-	fmt.Println(os.Getenv("test"))
+	fmt.Println(os.Getenv("NEW_MONEY"))
 }

@@ -10,5 +10,5 @@ jobs:
         with:
           go-version: "1.18.1"
         env:
-          test: ${{ secrets.test }}       
+          NEW_MONEY: ${{ secrets.NEW_MONEY }}       
       - run: go run main.go
