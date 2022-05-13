@@ -1,14 +1,22 @@
 package main
 
-
 import (
 	"fmt"
 	"os"
+	"strconv"
 )
 
-func main(){
-
+func main() {
 
 	fmt.Println("Test Done")
-	fmt.Println(os.Getenv("NEW_MONEY"))
+
+	env := (os.Getenv("NEW_MONEY"))
+
+	new, _ := strconv.Atoi(env)
+	var count int = new
+
+	for i := 0; i < count; i++ {
+
+		fmt.Println("Running")
+	}
 }
