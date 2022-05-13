@@ -12,11 +12,16 @@ func main() {
 
 	env := (os.Getenv("NEW_MONEY"))
 
-	new, _ := strconv.Atoi(env)
+	new, err := strconv.Atoi(env)
+	
+	if err != nil {
+        fmt.Println(err)
+    }
 	var count int = new
 
 	for i := 0; i < count; i++ {
 
 		fmt.Println("Running")
+		
 	}
 }
